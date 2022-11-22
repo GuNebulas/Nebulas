@@ -30,6 +30,7 @@ export default defineConfig(({ command, mode }) => {
     // command === 'build'
     return {
       ...shared,
+      base: 'Nebulas',
       // build specific config
       build: {
         outDir: "dist",
@@ -41,7 +42,6 @@ export default defineConfig(({ command, mode }) => {
             drop_debugger: true,
           },
         },
-        base: 'Nebulas'
       },
     };
   }
