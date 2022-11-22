@@ -41,6 +41,7 @@ export default defineConfig(({ command, mode }) => {
             drop_debugger: true,
           },
         },
+        base: 'Nebulas'
       },
     };
   }
