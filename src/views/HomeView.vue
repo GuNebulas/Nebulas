@@ -1,8 +1,6 @@
 <template>
   <main>
     <p>Hello, {{ userName }}</p>
-    <v-btn @click="login">{{ $t("login") }}</v-btn>
-    <v-btn @click="changeLang">change</v-btn>
   </main>
 </template>
 

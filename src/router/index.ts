@@ -5,10 +5,14 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     {
-      path: "/home",
+      path: "/",
       component: Home,
       name: "home",
     },
+    {
+      path: "/:pathMatch(.*)*",
+      redirect: '/'
+    }
   ],
 });
 
