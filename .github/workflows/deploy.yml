@@ -24,7 +24,12 @@ jobs:
 
       - name: Build project
         run: npm run build
-
+      
+      - name: navigate into the build output directory
+        run: cd dist
+      - name: create a copy of index.html
+        run: cp index.html 404.html
+      
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
