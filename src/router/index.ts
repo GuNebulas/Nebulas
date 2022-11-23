@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/HomeView.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.VITE_ROUTER_BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: "/home",
